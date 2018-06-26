@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HouseSalad</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" title="reset" />
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <%= link_to "HouseSalad", root_path %>
+    </nav>
+
+    <%= yield %>
+
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
