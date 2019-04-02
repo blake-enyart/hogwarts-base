@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HouseSalad</title>
+    <title>Hogwarts</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,7 +11,17 @@
 
   <body>
     <nav class="navbar">
-      <%= link_to "HouseSalad", root_path %>
+      <%= link_to "Hogwarts", root_path %>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <%= form_tag :search, method: :get, class: "form-inline" do %>
+            <div class="form-group search-field">
+              <%= select_tag :house, options_for_select(houses) %>
+              <%= submit_tag "Get Students", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+        </ul>
+      </div>
     </nav>
 
     <%= yield %>
