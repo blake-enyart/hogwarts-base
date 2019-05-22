@@ -1,10 +1,10 @@
 module ApplicationHelper
   def houses
     [
-      ['Griffyndor', 'Griffyndor'],
-      ['Ravenclaw', 'Ravenclaw'],
-      ['Slytherin', 'Slytherin'],
-      ['Hufflepuff', 'Hufflepuff']
+      ['Griffyndor', 'griffyndor'],
+      ['Ravenclaw', 'ravenclaw'],
+      ['Slytherin', 'slytherin'],
+      ['Hufflepuff', 'hufflepuff']
     ]
   end
 end

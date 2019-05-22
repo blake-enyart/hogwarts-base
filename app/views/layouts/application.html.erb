@@ -14,7 +14,7 @@
       <%= link_to "Hogwarts", root_path %>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <%= form_tag :search, method: :get, class: "form-inline" do %>
+          <%= form_tag :search, house: params[:house], method: :get, class: "form-inline" do %>
             <div class="form-group search-field">
               <%= select_tag :house, options_for_select(houses) %>
               <%= submit_tag "Get Students", class: "btn btn-primary" %>

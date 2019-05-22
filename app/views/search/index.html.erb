@@ -1,0 +1,13 @@
+<h1>Students</h1>
+<h3><%= facade.student_count %></h3>
+
+<% facade.house_results.each do |student| %>
+  <section class="student-card">
+    <div class="student-name">
+      Student Name: <%= student.name %>
+    </div>
+    <div class="student-id">
+      Student ID: <%= student.id %>
+    </div>
+  </section>
+<% end %>
